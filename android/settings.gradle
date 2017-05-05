@@ -1,0 +1,3 @@
+rootProject.name = 'todayRoutine'
+
+include ':app'
