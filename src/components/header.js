@@ -10,7 +10,7 @@ export default class Header extends Component {
     return (
       <View style={styles.viewStyle}>
         <Text style={styles.textStyle}>
-          Albums!
+          {this.props.headerText}
         </Text>
       </View>
     );

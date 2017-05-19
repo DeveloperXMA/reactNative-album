@@ -16,7 +16,7 @@ export default class todayRoutine extends Component {
   render() {
     return (
       <View>
-        <Header></Header>
+        <Header headerText="Xinrui Ma!"></Header>
       </View>
     );
   }
