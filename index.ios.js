@@ -10,16 +10,16 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import Header from './src/components/header';
+import Header from './src/components/Header';
 import { Container } from 'native-base';
+import AlbumList from './src/components/AlbumList';
 
 export default class todayRoutine extends Component {
   render() {
     return (
       <Container>
-        <View>
-          <Header headerText="Xinrui Ma!"></Header>
-        </View>
+        <Header headerText="Xinrui Ma!" />
+        <AlbumList />
       </Container>
     );
   }
