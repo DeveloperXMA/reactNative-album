@@ -11,13 +11,16 @@ import {
   View,
 } from 'react-native';
 import Header from './src/components/header';
+import { Container } from 'native-base';
 
 export default class todayRoutine extends Component {
   render() {
     return (
-      <View>
-        <Header headerText="Xinrui Ma!"></Header>
-      </View>
+      <Container>
+        <View>
+          <Header headerText="Xinrui Ma!"></Header>
+        </View>
+      </Container>
     );
   }
 }
