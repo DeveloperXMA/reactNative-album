@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 import Header from './src/components/Header';
-import { Container } from 'native-base';
+import { Container, Content } from 'native-base';
 import AlbumList from './src/components/AlbumList';
 
 export default class todayRoutine extends Component {
@@ -19,7 +19,9 @@ export default class todayRoutine extends Component {
     return (
       <Container>
         <Header headerText="Xinrui Ma!" />
-        <AlbumList />
+        <Content>
+          <AlbumList />
+        </Content>
       </Container>
     );
   }
