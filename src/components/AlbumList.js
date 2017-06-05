@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Image } from 'react-native';
-import { Container, Text, Card, CardItem, Thumbnail, Left, Right, Body } from 'native-base';
+import { View, Image, Linking } from 'react-native';
+import { Container, Text, Card, CardItem, Thumbnail, Left, Right, Body, Button } from 'native-base';
 import AlbumDetail from './AlbumDetail';
 import axios from 'axios';
 
@@ -26,6 +26,9 @@ export default class AlbumList extends Component {
         <CardItem cardBody style={styles.containerStyle}>
           <Image style={styles.imageSize} source={{uri: album.image}} />
         </CardItem>
+        <CardItem>
+          <Button style={{flex: 1}} block success onPress={() => Linking.openURL(album.url)}><Text>Buy Now!</Text></Button>
+        </CardItem>
       </Card>
     );
   }
@@ -44,6 +47,11 @@ export default class AlbumList extends Component {
         {this.renderAlbums()}
       </View>
     )
+  }
+
+  test(url) {
+    console.log('pressed');
+    Linking.openURL(url);
   }
 }
 

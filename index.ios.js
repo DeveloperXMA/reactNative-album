@@ -18,7 +18,7 @@ export default class todayRoutine extends Component {
   render() {
     return (
       <Container>
-        <Header headerText="Xinrui Ma!" />
+        <Header headerText="My Store!" />
         <Content>
           <AlbumList />
         </Content>
